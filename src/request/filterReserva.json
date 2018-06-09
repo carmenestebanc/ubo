@@ -1,0 +1,90 @@
+[
+  {
+    "proveedorId": "79ef7f90-890e-11e7-b5eb-99154ae31a78",
+    "nameProveedor": "Majestic",
+    "id": 0,
+    "title": "COURTYARD TIMES SQUARE",
+    "description": null,
+    "categoryId": 1,
+    "productId": "1",
+    "origin": "",
+    "destination": "NYC",
+    "additionatInfo": {
+      "Id": "50009061",
+      "Name": "COURTYARD TIMES SQUARE",
+      "Location": "New York-Manhattan - Times Square/Broadway-New York-USA",
+      "Category": "3.0000",
+      "ProductId": "1",
+      "Images": [
+        {
+          "Image": "../assets/img/app/no-image.png",
+          "Thumbnail": "../assets/img/app/no-image.png",
+          "visible": true
+        }
+      ],
+      "Rooms": [
+        {
+          "description": null,
+          "roomType": "STANDARD KING (1 BED)",
+          "roomID": "2",
+          "bookParam": "xa5oz4vax2cr9+X0/ZPaV9K5rPUeuiDee7gffNkwj+L4D9idZpOs/AiviQ6o0bGls2L8u2M8fGY=",
+          "optionID": "16",
+          "OptionStatus": "AVAILABLE",
+          "OptionIsOffer": "0",
+          "accomodationid": "95",
+          "accomodationCat": "DBL",
+          "maxPax": "2",
+          "optionNightsUnitTotal": "2788.0000",
+          "optionMealPlanUnitTotal": "0.0000",
+          "optionUnit": "1",
+          "optionNightsTotal": "2788.0000",
+          "optionFreeNightsTotal": "0",
+          "optionCommissionPercentage": "23.0000",
+          "optionCommissionValue": "641.2400",
+          "optionNightsNetTotal": "2146.7600",
+          "optionResortFeeTotal": "0.0000",
+          "priceID": "16",
+          "isNoRate": "0",
+          "nights": "6",
+          "nightsNormal": "2",
+          "nightSpecial": "AVAILABLE",
+          "status": null,
+          "refPrice": "526.0000",
+          "netPrice": "405.0200",
+          "refPriceSpecial": null,
+          "netPriceSpecial": null,
+          "valueadd": null,
+          "specialPrice": [
+            {
+              "Day": "4",
+              "Label": "Thursday",
+              "RefPrice": "434.0000"
+            },
+            {
+              "Day": "5",
+              "Label": "Friday",
+              "RefPrice": "434.0000"
+            },
+            {
+              "Day": "6",
+              "Label": "Saturday",
+              "RefPrice": "434.0000"
+            },
+            {
+              "Day": "7",
+              "Label": "Sunday",
+              "RefPrice": "434.0000"
+            }
+          ],
+          "additionalInfo": [],
+          "nightsTotal": true
+        }
+      ]
+    },
+    "dateini": null,
+    "dateend": null,
+    "serviceResponse": null,
+    "nameAdaptador": "majestic",
+    "reservation": true
+  }
+]

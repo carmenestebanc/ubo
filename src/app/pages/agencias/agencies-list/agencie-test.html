@@ -1,0 +1,123 @@
+<div class="container">    
+    <form (ngSubmit)="_onSubmit($event)" [formGroup]="_form">    
+        <div class="row"> <!--row 1 -->
+            <div class="col">
+            <div class="form-group">
+                <label for="agencyName">
+                Agency&nbsp;
+                    <i class="fa fa-refresh blue-text cursor-pointer" title="Refresh" (click)="_loadAgencies()"></i>
+                </label>
+                <input class="form-control" formControlName='agencyName' type="text" name="agencyName" list="agencies_list">
+                <datalist id="agencies_list">
+                <option *ngFor="let item of _agencies" value="{{item.name}}" text="{{item.name}}">
+                </datalist>
+            </div><!-- End class form-group -->
+            </div><!-- End class col -->
+            <div class="col">
+            <div class="form-group">
+                <label for="status">
+                Status&nbsp;
+                </label>
+                <input class="form-control" formControlName='status' type="text" name="status" list="status_list">
+                <datalist id="status_list">
+                <option *ngFor="let item of _status" value="{{item}}" text="{{item}}">
+                </datalist>
+            </div><!--End class form-group -->
+            </div><!--End class col -->
+            <div class="col">
+            <button class="btn btn-primary">
+                <i class="fa pull-bottom {{_findData?'fa-spinner fa-spin':'fa fa-search'}}"></i>&nbsp;
+                Search
+            </button><!--End search button -->
+            </div><!--End class col -->
+        </div><!--End row 1 -->
+    </form><!--End form filtro -->
+</div><!--End container -->  
+<div class="row" *ngIf="agencies">
+    <div class="col-xl-12 col-lg-12 col-12 bottom-30">
+        <div widget class="card">      
+            <div class="card-header">      
+                <span class="text-uppercase">Agencies List</span>                
+                <div class="widget-controls">
+                    <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                    <button type="submit" class="btn btn-primary pull-right" [routerLink]="['../add']">New</button>
+                </div><!--End widget controls -->
+            </div><!--End card header -->
+            <!-- tabla con los datos de los agencies -->
+            <div class="card-block widget-body">
+                <div class="table-responsive datatable">
+                    <table class="table table-striped table-hover table-sm" [mfData]="_data" #mf="mfDataTable" [mfRowsOnPage]="10">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Business Name</th>
+                                <th>E-mail</th>
+                                <th>Phone</th>
+                                <th>Contact Person</th>
+                                <th>Address</th>
+                                <th>Enabled</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let agency of mf.data">
+                                <td>{{agency.id}}</td>
+                                <td>{{agency.name}}</td>
+                                <td>{{agency.name_business}}</td>
+                                <td>{{agency.email}}</td>
+                                <td>{{agency.phone}}</td>
+                                <td>{{agency.name_contact}}</td>
+                                <td>{{agency.address}}</td>
+                                <td>
+                                    <p *ngIf="agency.status === '1'">Yes</p>
+                                    <p *ngIf="agency.status === '0'">No</p>
+                                </td>
+                                <td>
+                                    <!--<button class="btn btn-info .btn-sm" [routerLink]="['../detail', agency.id]"><i class="fa fa-search-plus "></i></button>-->
+                                    <button class="btn btn-info .btn-sm" [routerLink]="['../detail', agency.id]"><i class="fa fa-search-plus "></i></button>
+                                    <button class="btn btn-primary .btn-sm" [routerLink]="['../update', agency.id]"><i class="fa fa-pencil "></i></button>
+                                    <button data-toggle='modal' data-target="#confirm" (click)="setAgency(agency.id)" class="btn btn-danger .btn-sm"><i class="fa fa-trash "></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="12">
+                                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"><strong>Rows</strong></mfBootstrapPaginator>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>              
+                </div>   
+                <div class="container" *ngIf="_data?.length; else notFound"></div>            
+                <span *ngIf="!_successFound">
+                    <strong>:(</strong>&nbsp;we couldn't find results.
+                </span>  
+            </div><!-- end card-body-->
+        </div><!-- end widget card-->
+    </div><!-- end col 12-->
+</div><!-- end row agencies-->
+<div id="confirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6>Delete Agency</h6>
+            </div>
+            <div class="modal-body">
+                Do you really wish to delete agency?
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn">NO</button>
+                <button (click)="delete(_agencyid)" type="button" data-dismiss="modal" class="btn btn-primary">
+                    <i class="fa fa-trash"></i>&nbsp;
+                        YES
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+      

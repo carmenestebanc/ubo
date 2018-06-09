@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-12">
+        <p></p>
+        <h3>Category Details</h3>
+        <p></p>
+    </div>
+</div>
+<div *ngIf="categorias">
+
+    <div class="row">
+        <!--Main Info-->
+        <div class="col-lg-6 col-sm-12 bottom-30">
+            <div widget class="card">
+                <div class="card-header">
+                    <span>Main Info</span>
+                    <div class="widget-controls">
+                        <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                        <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="card-block widget-body feed">
+                    <div class="list-group">
+                        
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label>Id  </label>
+                            </div>
+                            <h6>{{categorias.id}}</h6>
+                        </div>
+                        
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label>Name</label>
+                            </div>
+                            <h6>{{categorias.name }}</h6>
+                        </div>
+
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+
+                            <div class="d-flex w-100 justify-content-between">
+                                <label>Order</label>
+                            </div>
+                            <h6>{{categorias.ordering}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Address Info -->
+        <div class="col-lg-6 col-sm-12 bottom-30">
+            <div widget class="card">
+                <div class="card-header">
+                    <span>More Info</span>
+                    <div class="widget-controls">
+                        <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                        <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    </div>
+                </div>
+                <div class="card-block widget-body feed">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <label>Description </label>
+                            </div>
+                            <h6>
+                                <span *ngIf="categorias.description != null">{{categorias.description}}</span>
+                                <span *ngIf="categorias.description == null">This category doesn't have a description.</span>
+                            </h6>
+                        </div>
+
+                        <div class="list-group-item list-group-item-action flex-column align-items-start">
+
+                            <div class="d-flex w-100 justify-content-between">
+                                <label>Active</label>
+                            </div>
+
+                            <h6 *ngIf="categorias.active">Yes</h6>
+                            <h6 *ngIf="!categorias.active">No</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

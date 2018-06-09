@@ -1,0 +1,90 @@
+<div *ngIf="user">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-12"></div>
+        <div class="col-xl-8 col-lg-8 col-12 bottom-30">
+            <div widget class="card">
+                <div class="card-header">
+                    <span>Update User</span>
+                    <div class="widget-controls">
+                        <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                        <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                        <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                        <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                    </div>
+                </div>
+                <div class="card-block widget-body">
+                    <form novalidate (ngSubmit)="onSubmit(formUser)" [formGroup]="formUser">
+                        <input type="hidden" formControlName="id" id="id" name="id">
+                        <div class="form-group">
+                            <label for="first_name">Name (*)</label>
+                            <input type="text" formControlName="first_name" id="first_name" class="form-control" name="first_name" autocomplete="off" ng-maxlength="60" required>
+                            <div class="col-sm-8 text-left">
+                                <span class="help-block text-danger" *ngIf="formUser.get('first_name').touched && (formUser.get('first_name').hasError('required') || formUser.get('first_name').hasError('invalid'))">This field is required.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('first_name').touched && formUser.get('first_name').hasError('maxlength')">This field requires less than 60 chars.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('first_name').touched && formUser.get('first_name').hasError('invalidString')">This field only admits letters from a-z and A-Z.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('first_name').touched && formUser.get('first_name').hasError('tooManyWords')">Too many words. This field admits three words or less.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Lastname (*)</label>
+                            <input type="text" formControlName="last_name" id="last_name" class="form-control" name="last_name" autocomplete="off" ng-maxlength="60" required>
+                            <div class="col-sm-8 text-left">
+                                <span class="help-block text-danger" *ngIf="formUser.get('last_name').touched && (formUser.get('last_name').hasError('required') || formUser.get('last_name').hasError('invalid'))">This field is required.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('last_name').touched && formUser.get('last_name').hasError('maxlength')">This field requires less than 60 chars.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('last_name').touched && formUser.get('last_name').hasError('invalidString')">This field only admits letters from a-z and A-Z.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('last_name').touched && formUser.get('last_name').hasError('tooManyWords')">Too many words. This field admits three words or less.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail (*)</label>
+                            <input type="text" formControlName="email" id="email" class="form-control" name="email" autocomplete="off" ng-maxlength="40" required>
+                            <div class="col-sm-8 text-left">
+                                    <span class="help-block text-danger" *ngIf="formUser.get('email').touched && formUser.get('email').hasError('required')">This field is required</span>
+                                    <span class="help-block text-danger" *ngIf="formUser.get('email').touched && formUser.get('email').hasError('invalidEmail')">Invalid email. Format.: user@domain.com</span>
+                                    <span class="help-block text-danger" *ngIf="formUser.get('email').touched && formUser.get('email').hasError('maxlength')">This field requires less than 40 chars.</span>                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (*)</label>
+                            <input type="text" formControlName="phone" id="phone" class="form-control" name="phone" autocomplete="off" ng-maxlength="15" required>
+                            <div class="col-sm-8 text-left">
+                                <span class="help-block text-danger" *ngIf="formUser.get('phone').touched && formUser.get('phone').hasError('required')">This field is required.</span>                                        
+                                <span class="help-block text-danger" *ngIf="formUser.get('phone').touched && formUser.get('phone').hasError('invalidcellphone')">Pattern invalid, must be +00 000-0000000.</span>
+                                <span class="help-block text-danger" *ngIf="formUser.get('phone').touched && formUser.get('phone').hasError('maxlength')">This field requires less than 10 numbers.</span>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="roles">
+                                Role (*)&nbsp;
+                                <i class="fa fa-refresh blue-text cursor-pointer" title="Refresh" (click)="loadRoles()"></i>
+                            </label>
+                            <select class="form-control" formControlName='roles' name="roles" list="roles_list" autocomplete="off" required id="roles_list">
+                                    <option *ngFor="let item of _roles" value="{{item.id}}">{{item.name}}</option>
+                            </select>
+                            <span class="help-block text-danger" *ngIf="formUser.get('roles').touched && formUser.get('roles').hasError('required')">This field can't be empty.</span>
+                        </div><!-- End class form-group roles-->
+                        <div class="form-group">
+                                <label class="custom-control custom-checkbox"> 
+                                    <input type="checkbox" name="enabled" formControlName="enabled"  class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Enabled?</span>
+                                </label>
+                            </div>  <!-- End class form-group enabled--> 
+                        <div class="form-group">
+                                <label for="agency_id">
+                                    Agency (*)&nbsp;
+                                    <i class="fa fa-refresh blue-text cursor-pointer" title="Refresh" (click)="loadAgencies()"></i>
+                                </label>
+                                <select class="form-control" formControlName='agency_id' name="agency_id" list="agencies_list" autocomplete="off" required id="agencies_list">
+                                        <option *ngFor="let item of _agencies" value="{{item.id}}">{{item.name}}</option>
+                                </select>
+                                <span class="help-block text-danger" *ngIf="formUser.get('agency_id').touched && formUser.get('agency_id').hasError('required')">This field can't be empty.</span>
+                        </div><!-- End class form-group -->
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-primary" [disabled]="formUser.invalid">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

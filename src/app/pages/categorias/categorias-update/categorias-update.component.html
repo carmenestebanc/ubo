@@ -1,0 +1,62 @@
+<div *ngIf="categorias">
+<div class="row">
+    <div class="col-xl-2 col-lg-2 col-12"></div>
+    <div class="col-xl-8 col-lg-8 col-12 bottom-30">
+        <div widget class="card">
+            <div class="card-header">
+                <span>Category</span>
+                <div class="widget-controls">
+                    <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                </div>
+            </div>
+            <div class="card-block widget-body"  >
+ 
+                    <form (ngSubmit)="onSubmit(form1)"   [formGroup]="form1" >
+                    <input type="hidden" [(ngModel)]="categorias.id" value="{{categorias.id}}" formControlName="id" id="id"  >
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" [(ngModel)]="categorias.name" value="{{categorias.name}}" formControlName="name" id="name" class="form-control"   required>
+                            <div class="col-sm-8 text-left">
+                                <span class="help-block text-danger" *ngIf="form1.get('name').touched && (form1.get('name').hasError('required') || form1.get('name').hasError('invalid'))">This field is required.</span>                              
+                                <span class="help-block text-danger" *ngIf="form1.get('name').touched && form1.get('name').hasError('maxlength')">This field requires less than 255 chars.</span>
+                            </div>               
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control"  [(ngModel)]="categorias.description" value="{{categorias.description}}" formControlName="description" id="description" name="description"></textarea>
+                        <div class="col-sm-8 text-left">
+                            <span class="help-block text-danger" *ngIf="form1.get('description').touched && form1.get('description').hasError('maxlength')">This field requires less than 255 chars.</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ordering">Order</label>
+                        <input type="number" [(ngModel)]="categorias.ordering" value="{{categorias.ordering}}" formControlName="ordering" id="ordering" class="form-control"   required>
+                            <div class="col-sm-8 text-left">
+                                <span class="help-block text-danger" *ngIf="form1.get('ordering').touched && form1.get('ordering').hasError('required')">This field is required.</span>                              
+                                <span class="help-block text-danger" *ngIf="form1.get('ordering').touched && form1.get('ordering').hasError('minlength')">This field value must be 0 or a higher number.</span>
+
+                                <span class="help-block text-danger" *ngIf="form1.get('ordering').hasError('maxlength')">This field allows up to 10 digits.</span>
+                            </div>               
+                    </div>
+                     
+                      <div class="form-group">
+                            <label class="custom-control custom-checkbox"> 
+                                    <input type="checkbox" name="active" [(ngModel)]="categorias.active"   [checked]="categorias.active" formControlName="active" class="custom-control-input">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Active?</span>
+                            </label>
+                        </div>
+                     <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary" [disabled]="!form1.valid">Save</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

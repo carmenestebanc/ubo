@@ -1,0 +1,85 @@
+<div class="row">
+        <div class="col-12">
+          <p></p>
+          <h3>Client Details</h3>
+          <p></p>
+        </div>
+      </div>
+      
+      <div *ngIf="clients">
+        <div class="row">
+          <!--Main Info-->
+          <div class="col-lg-6 col-sm-12 bottom-30">
+            <div widget class="card">
+              <div class="card-header">
+                <span>Detail</span>
+                <div class="widget-controls">
+                  <a data-widgster="expand" href="#" class="transition">
+                    <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <a data-widgster="collapse" href="#" class="transition">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-block widget-body feed">
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <label>First Name</label>
+                    </div>
+                    <h6>{{clients.first_name}}</h6>
+                  </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <label>Last Name</label>
+                    </div>
+                    <h6>{{clients.last_name}}</h6>
+                  </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <label>Birth Date</label>
+                      </div>
+                      <h6>{{clients.birth_date}}</h6>
+                    </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                       <label>Phone</label>
+                   </div>
+                   <h6>{{clients.phone}}</h6>
+                  </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <label>E-mail</label>
+                    </div>
+                    <h6>{{clients.email}}</h6>
+                  </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <label>Country</label>
+                    </div>
+                    <h6>{{clients.country}}</h6>
+                  </div>
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <label>State</label>
+                      </div>
+                      <h6>{{clients.state}}</h6>
+                  </div> 
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <label>City</label>
+                    </div>
+                    <h6>{{clients.city}}</h6>
+                </div>                 
+                  <div class="list-group-item list-group-item-action flex-column align-items-start">
+                       <div class="d-flex w-100 justify-content-between">
+                          <label>Address</label>
+                      </div>
+                      <h6>{{clients.address}}</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      

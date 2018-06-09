@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-lg-6">
+    <input type="text" #filterSelect  placeholder="Search">
+    <ul>
+      <li   *ngFor="let item of country" (click)='_select(item,false)' title="Remove" class="cursor-pointer">
+        <a>{{item.cityName}}</a>
+      </li>
+    </ul>
+    
+  </div>
+  <div class="col-lg-6">
+    <!-- <input type="text" ngui-auto-complete  id="countryName"  autocomplete="off" name="countryName"  placeholder="Search"
+    [(ngModel)]="selected" 
+    min-chars=2
+    [source]="data.bind(this)" 
+    display-property-name="cityName"
+    [list-formatter]="_myListFormatter"
+    (valueChanged)="_select($event,true)"
+    accept-user-input="false"> -->
+    
+    
+  </div>
+</div>

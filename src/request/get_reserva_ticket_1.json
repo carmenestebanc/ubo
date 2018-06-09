@@ -1,0 +1,124 @@
+{
+  "status": true,
+  "message": "Majestic: Consulta de Reserva exitosa",
+  "result": {
+    "proveedorId": "a6c95620-9871-11e7-bea8-fbf21ce8a418",
+    "nameProveedor": "Majestic",
+    "id": "947228",
+    "title": "CIRQUE DU SOLEIL \"E-TICKET\"",
+    "description": "Un (1) Ticket para Cirque du Soleil asiento categor\u00eda 2. El ticket especifica el asiento, el show, la fecha y la hora. Los tickets NO son reembolsables. Todos los horarios y fechas de los espect\u00e1culos est\u00e1n sujetos a cambios sin previo aviso.",
+    "categoryId": 9,
+    "productId": "947228",
+    "origin": null,
+    "destination": "ORLANDO,LAKE BUENA VISTA",
+    "additionalInfo": {
+      "FileId": "436678",
+      "IdReservation": "947228",
+      "Estatus": "On Request",
+      "Arrival": "2017-09-14T00:00:00",
+      "Departure": "2017-09-20T00:00:00",
+      "Price": "182.0000",
+      "PaxList": {
+        "Type": [
+          {
+            "LastName": "a2",
+            "FirstName": "a1",
+            "Qty": "1",
+            "Type": "Adults",
+            "Age": "32"
+          },
+          {
+            "LastName": "b2",
+            "FirstName": "b1",
+            "Qty": "1",
+            "Type": "Adults",
+            "Age": "40"
+          },
+          {
+            "LastName": "c2",
+            "FirstName": "c1",
+            "Qty": "1",
+            "Type": "Child",
+            "Age": "5"
+          },
+          {
+            "LastName": "d2",
+            "FirstName": "d1",
+            "Qty": "1",
+            "Type": "Child",
+            "Age": "6"
+          },
+          {
+            "LastName": "e2",
+            "FirstName": "e1",
+            "Qty": "1",
+            "Type": "Child",
+            "Age": "7"
+          }
+        ]
+      },
+      "Comment": null,
+      "CancelationReasons": null,
+      "ReservationDetail": {
+        "PaxQTY": "2",
+        "Price": "91.0000",
+        "RatePaxType": "RATES PER PAX",
+        "RateChargeType": "WHOLE PERIOD RATE",
+        "Arrival": "2017-09-14T00:00:00",
+        "Departure": "2017-09-20T00:00:00",
+        "Comments": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "Notes": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "Airline": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "FlightTime": [],
+        "HotelBooking": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "CxlPolicy": {
+          "CxlDays": "30",
+          "Penalty": "100",
+          "Term": {
+            "From": "2017-09-13T14:24:25.280",
+            "To": "2017-09-13T00:00:00",
+            "CxlCharge": "182.0000"
+          }
+        }
+      },
+      "CxlDays": "30",
+      "Penalty": "100",
+      "CxlCharge": {
+        "@attributes": {
+          "nil": "true"
+        }
+      },
+      "PayBefore": "2017-09-07T00:00:00",
+      "TermFrom": "2017-09-13T14:24:25.280",
+      "TermTo": "2017-09-13T00:00:00",
+      "TermCxlCharge": "182.0000",
+      "Notes": {
+        "@attributes": {
+          "nil": "true"
+        }
+      }
+    },
+    "dateini": "2017-09-14T00:00:00",
+    "dateend": "2017-09-20T00:00:00",
+    "serviceResponse": null,
+    "nameAdaptador": "Majestic_Others",
+    "idBusqueda": null
+  },
+  "serviceResponse": null
+}

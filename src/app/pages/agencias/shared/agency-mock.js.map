@@ -1,0 +1,1 @@
+{"version":3,"file":"agency-mock.js","sourceRoot":"","sources":["agency-mock.ts"],"names":[],"mappings":";AAGa,QAAA,MAAM,GAAW;IAC5B,IAAI,EAAE,GAAG;IACT,MAAM,EAAE,yBAAyB;IACjC,eAAe,EAAE,aAAa;IAC9B,OAAO,EAAE,mBAAmB;IAC5B,QAAQ,EAAE,YAAY;IACtB,QAAQ,EAAE,IAAI;IACd,cAAc,EAAE,aAAa;IAC7B,OAAO,EAAG,aAAa;IACvB,SAAS,EAAG,0BAA0B;IACtC,YAAY,EAAG,GAAG;CACnB,CAAC"}

@@ -1,0 +1,52 @@
+<div *ngIf="agent">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-12"></div>
+        <div class="col-xl-8 col-lg-8 col-12 bottom-30">
+            <div widget class="card">
+                <div class="card-header">
+                    <span>Update Agent</span>
+                    <div class="widget-controls">
+                        <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                        <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                        <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                        <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                    </div>
+                </div>
+                <div class="card-block widget-body">
+
+                    <form novalidate (ngSubmit)="onSubmit(form1)" [formGroup]="form1">
+                    <input type="hidden" formControlName="id" id="id" name="id">
+
+                    <div class="form-group">
+                            <label for="agency_id">
+                                Agency&nbsp;
+                                <i class="fa fa-refresh blue-text cursor-pointer" title="Refresh" (click)="_loadAgencies()"></i>
+                            </label>
+                            <input class="form-control" formControlName='agency_id' type="text" name="agency_id" list="agencies_list">
+                            <datalist id="agencies_list">
+                                <option *ngFor="let item of _agencies" value="{{item.id}}" text="{{item.name}}">
+                            </datalist>
+                        </div><!-- End class form-group Agency-->
+    
+                        <div class="form-group">
+                                <label for="user_id">
+                                    User&nbsp;
+                                    <i class="fa fa-refresh blue-text cursor-pointer" title="Refresh" (click)="_loadUsers()"></i>
+                                </label>
+                                <input class="form-control" formControlName='user_id' type="text" name="user_id" list="users_list">
+                                <datalist id="users_list">
+                                    <option *ngFor="let item of _users" value="{{item.id}}" text="{{item.name}}">
+                                </datalist>
+                            </div><!-- End class form-group Agency--> 
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-primary" [disabled]="form1.invalid">Save</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

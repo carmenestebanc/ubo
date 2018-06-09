@@ -1,0 +1,852 @@
+{
+  "results": [
+    {
+      "proveedorId": "4a604300-88f3-11e7-9874-abab74614430",
+      "nameProveedor": "Majestic",
+      "id": 0,
+      "title": "COURTYARD TIMES SQUARE",
+      "description": null,
+      "categoryId": 1,
+      "productId": "1",
+      "origin": "CCS",
+      "destination": "NYC",
+      "additionalInfo": {
+        "Id": "50009061",
+        "Name": "COURTYARD TIMES SQUARE",
+        "Location": "New York-Manhattan - Times Square\/Broadway-New York-USA",
+        "Category": "3.0000",
+        "ProductId": "1",
+        "Images": {
+          "error:": "No se encontraron imagenes"
+        },
+        "Rooms": [
+          {
+            "description": null,
+            "roomType": "STANDARD KING (1 BED)",
+            "roomID": "2",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "16",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2012.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2012.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "462.7600",
+            "optionNightsNetTotal": "1549.2400",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "16",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "526.0000",
+            "netPrice": "405.0200",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "434.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "434.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "434.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "434.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "TWO DOUBLE BEDS",
+            "roomID": "3",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "16",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "95",
+            "accomodationCat": "DBL",
+            "maxPax": "2",
+            "optionNightsUnitTotal": "2132.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2132.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "490.3600",
+            "optionNightsNetTotal": "1641.6400",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "16",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "556.0000",
+            "netPrice": "428.1200",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "464.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "464.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "464.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "464.0000"
+              }
+            ],
+            "additionalInfo": []
+          }
+        ]
+      },
+      "dateini": null,
+      "dateend": null,
+      "serviceResponse": null,
+      "nameAdaptador": "majestic"
+    },
+    {
+      "proveedorId": "4a604300-88f3-11e7-9874-abab74614430",
+      "nameProveedor": "Majestic",
+      "id": 1,
+      "title": "HOTEL PENNSYLVANIA NEW YORK-",
+      "description": null,
+      "categoryId": 1,
+      "productId": "1",
+      "origin": "CCS",
+      "destination": "NYC",
+      "additionalInfo": {
+        "Id": "288",
+        "Name": "HOTEL PENNSYLVANIA NEW YORK-",
+        "Location": "New York-Manhattan - Midtown-New York-USA",
+        "Category": "3.0000",
+        "ProductId": "1",
+        "Images": [
+          
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_12.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_12th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_13.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_13th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_14.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_14th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_15.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_15th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_16.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_16th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_17.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel288_17th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            }
+          
+        ],
+        "Rooms": [
+          {
+            "description": null,
+            "roomType": "CLASSIC ROOM ONE BED",
+            "roomID": "11",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "43",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "1008.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "1008.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "231.8400",
+            "optionNightsNetTotal": "776.1600",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "43",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "4",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "252.0000",
+            "netPrice": "194.0400",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "CLASSIC ROOM TWIN",
+            "roomID": "13",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "6",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "1032.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "1032.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "237.3600",
+            "optionNightsNetTotal": "794.6400",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "6",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "4",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "258.0000",
+            "netPrice": "198.6600",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "CLASSIC ROOM TWO BEDS",
+            "roomID": "12",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "47",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "95",
+            "accomodationCat": "DBL",
+            "maxPax": "2",
+            "optionNightsUnitTotal": "1068.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "1068.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "245.6400",
+            "optionNightsNetTotal": "822.3600",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "47",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "4",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "267.0000",
+            "netPrice": "205.5900",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [],
+            "additionalInfo": []
+          }
+        ]
+      },
+      "dateini": null,
+      "dateend": null,
+      "serviceResponse": null,
+      "nameAdaptador": "majestic"
+    },
+    {
+      "proveedorId": "4a604300-88f3-11e7-9874-abab74614430",
+      "nameProveedor": "Majestic",
+      "id": 2,
+      "title": "RESIDENCE INN TIMES SQUARE",
+      "description": null,
+      "categoryId": 1,
+      "productId": "1",
+      "origin": "CCS",
+      "destination": "NYC",
+      "additionalInfo": {
+        "Id": "51203395",
+        "Name": "RESIDENCE INN TIMES SQUARE",
+        "Location": "New York-Manhattan - Times Square\/Broadway-New York-USA",
+        "Category": "3.0000",
+        "ProductId": "1",
+        "Images": {
+          "error:": "No se encontraron imagenes"
+        },
+        "Rooms": []
+      },
+      "dateini": null,
+      "dateend": null,
+      "serviceResponse": null,
+      "nameAdaptador": "majestic"
+    },
+    {
+      "proveedorId": "4a604300-88f3-11e7-9874-abab74614430",
+      "nameProveedor": "Majestic",
+      "id": 3,
+      "title": "THE WESTIN NEW YORK AT TIMES SQUARE",
+      "description": null,
+      "categoryId": 1,
+      "productId": "1",
+      "origin": "CCS",
+      "destination": "NYC",
+      "additionalInfo": {
+        "Id": "4193",
+        "Name": "THE WESTIN NEW YORK AT TIMES SQUARE",
+        "Location": "New York-Manhattan - Times Square\/Broadway-New York-USA",
+        "Category": "4.0000",
+        "ProductId": "1",
+        "Images": [
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_4.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_4th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_5.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_5th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_6.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_6th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_7.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_7th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_8.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_8th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_9.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_9th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_10.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_10th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_11.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_11th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_12.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_12th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            },
+            {
+              "Image": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_13.jpg",
+              "Thumbnail": "http:\/\/www.majesticusa.com\/imagen\/hoteles\/hotel4193_13th.jpg",
+              "Description": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              }
+            }
+        ],
+        "Rooms": [
+          {
+            "description": null,
+            "roomType": "TRADITIONAL (KING)",
+            "roomID": "3",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "106",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2604.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2604.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "598.9200",
+            "optionNightsNetTotal": "2005.0800",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "106",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "674.0000",
+            "netPrice": "518.9800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "582.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "TRADITIONAL (DOUBLE)",
+            "roomID": "2",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "107",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2604.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2604.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "598.9200",
+            "optionNightsNetTotal": "2005.0800",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "107",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "674.0000",
+            "netPrice": "518.9800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "582.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "582.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "DELUXE (KING)",
+            "roomID": "4",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "106",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2725.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2725.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "626.7500",
+            "optionNightsNetTotal": "2098.2500",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "106",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "704.0000",
+            "netPrice": "542.0800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "613.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "DELUXE (DOUBLE)",
+            "roomID": "19",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "33",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2725.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2725.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "626.7500",
+            "optionNightsNetTotal": "2098.2500",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "33",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "704.0000",
+            "netPrice": "542.0800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "613.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "613.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "PREMIUM DELUXE (KING)",
+            "roomID": "5",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "104",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2845.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2845.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "654.3500",
+            "optionNightsNetTotal": "2190.6499",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "104",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "734.0000",
+            "netPrice": "565.1800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "643.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "PREMIUM DELUXE (DOUBLE)",
+            "roomID": "20",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "33",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2845.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2845.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "654.3500",
+            "optionNightsNetTotal": "2190.6499",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "33",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "734.0000",
+            "netPrice": "565.1800",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "643.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "643.0000"
+              }
+            ],
+            "additionalInfo": []
+          },
+          {
+            "description": null,
+            "roomType": "GRAND DELUXE (KING)",
+            "roomID": "7",
+            "bookParam": "xa5oz4vax2dBR+8x3lZcutvsB39emWyWMT444cAPJ2OSFbEKyNaHTzfIh034sD3Mq4GYQoMbiy0=",
+            "optionID": "76",
+            "OptionStatus": "AVAILABLE",
+            "OptionIsOffer": "0",
+            "accomodationid": "139",
+            "accomodationCat": "SGL",
+            "maxPax": "1",
+            "optionNightsUnitTotal": "2969.0000",
+            "optionMealPlanUnitTotal": "0.0000",
+            "optionUnit": "1",
+            "optionNightsTotal": "2969.0000",
+            "optionFreeNightsTotal": "0",
+            "optionCommissionPercentage": "23.0000",
+            "optionCommissionValue": "682.8700",
+            "optionNightsNetTotal": "2286.1299",
+            "optionResortFeeTotal": "0.0000",
+            "priceID": "76",
+            "isNoRate": "0",
+            "nights": "4",
+            "nightsNormal": "3",
+            "nightSpecial": "AVAILABLE",
+            "status": null,
+            "refPrice": "765.0000",
+            "netPrice": "589.0500",
+            "refPriceSpecial": null,
+            "netPriceSpecial": null,
+            "valueadd": null,
+            "specialPrice": [
+              {
+                "Day": "4",
+                "Label": "Thursday",
+                "RefPrice": "674.0000"
+              },
+              {
+                "Day": "5",
+                "Label": "Friday",
+                "RefPrice": "674.0000"
+              },
+              {
+                "Day": "6",
+                "Label": "Saturday",
+                "RefPrice": "674.0000"
+              },
+              {
+                "Day": "7",
+                "Label": "Sunday",
+                "RefPrice": "674.0000"
+              }
+            ],
+            "additionalInfo": []
+          }
+        ]
+      },
+      "dateini": null,
+      "dateend": null,
+      "serviceResponse": null,
+      "nameAdaptador": "majestic"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"tabs-accordions.component.js","sourceRoot":"","sources":["tabs-accordions.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAA6D;AAO7D,IAAa,uBAAuB;IAApC;IAAuC,CAAC;IAAD,8BAAC;AAAD,CAAC,AAAxC,IAAwC;AAA3B,uBAAuB;IALnC,gBAAS,CAAC;QACT,QAAQ,EAAE,qBAAqB;QAC/B,aAAa,EAAE,wBAAiB,CAAC,IAAI;QACrC,WAAW,EAAE,kCAAkC;KAChD,CAAC;GACW,uBAAuB,CAAI;AAA3B,0DAAuB"}

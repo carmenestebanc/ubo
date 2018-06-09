@@ -1,0 +1,1 @@
+{"version":3,"file":"mail-compose.component.js","sourceRoot":"","sources":["mail-compose.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAA6D;AAO7D,IAAa,oBAAoB;IAAjC;IAAoC,CAAC;IAAD,2BAAC;AAAD,CAAC,AAArC,IAAqC;AAAxB,oBAAoB;IALhC,gBAAS,CAAC;QACT,QAAQ,EAAE,kBAAkB;QAC5B,aAAa,EAAE,wBAAiB,CAAC,IAAI;QACrC,WAAW,EAAE,+BAA+B;KAC7C,CAAC;GACW,oBAAoB,CAAI;AAAxB,oDAAoB"}

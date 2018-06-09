@@ -1,0 +1,16 @@
+<figure *ngIf="_success" class="figure white-bg br-5">
+  <img  *ngFor="let image of _image" 
+        [hidden]="!image.visible" 
+        (click)="_select($event)"              
+        [src]="image[params.use || 'img']"
+        class="media-object image-product-tb br-5">
+
+  <figcaption class="figure-caption text-center">
+    <i  *ngFor="let image of _image;let i=index"
+        class="fa fa-circle{{image.visible?'':'-thin'}} cursor-pointer"
+        [class.blue-text]="image.visible"
+        (click)="_changeImage($event,i)"
+        title="Ver imagen {{i+1}}">&nbsp;
+    </i>
+  </figcaption>
+</figure>

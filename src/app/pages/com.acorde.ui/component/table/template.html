@@ -1,0 +1,88 @@
+<div class="row" *ngIf="model && model.completed">
+  <div class="col">
+    <div widget class="card">
+      <div class="card-header">
+        <span class="text-uppercase">{{model.viewOptions.title}}</span>
+      
+        <ng-template [ngIf]="model.viewOptions.actionsGlobal">
+          <span class="pull-right">
+            <button *ngFor="let action of model.viewOptions.actionsGlobal.toArray(true)"
+                    (click)="action.callback()"
+                    title="{{action.currentView().title}}"
+                    class="btn-box-tool {{action.currentView().class}}">
+                <i class="{{action.currentView().icon}}"></i>
+            </button>
+          </span>
+        </ng-template>
+
+        <div class="widget-controls">
+          <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+          <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+          <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+          <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+        </div>
+      </div>
+      <div class="card-block widget-body">
+        <!--
+                <div class="w-200 pull-right bottom-15">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" id="table-search-input" [(ngModel)]="searchText" type="text" placeholder="Buscar...">
+                    </div>
+                </div>-->
+        <!-- tabla con los datos de los categorias -->
+        <div class="table-responsive datatable">
+          <!--<table class="table table-striped table-hover table-sm" [mfData]="categorias  | SearchPipe : searchText" #mf="mfDataTable" [mfRowsOnPage]="10">-->
+          <table class="table table-striped table-hover table-sm">
+            <thead>
+              <tr>
+                <th *ngFor="let key of _fieldVisible">{{_getRule(key).title}}</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody *ngIf="model.data">
+              <tr *ngFor="let data of model.subs | async">
+
+                <td *ngFor="let key of _fieldVisible">
+                  <ng-template [ngIf]="_isType(key,'text','number')">
+                    {{data[key]}}
+                  </ng-template>
+
+                  <ng-template [ngIf]="_isType(key,'boolean')">
+                    <span class="{{ _getRule(key).getValue(data[key]).class}}" [attr.title]="_getRule(key).getValue(data[key]).title">
+                                            <i class="{{ _getRule(key).getValue(data[key]).icon}}"></i>
+                                            &nbsp;{{_getRule(key).getValue(data[key]).text}}
+                                        </span>
+                  </ng-template>
+                </td>
+
+                <td>
+                  <!-- <button class="btn btn-info .btn-sm" [routerLink]="['../detail', categoria.id]"><i class="fa fa-search-plus "></i></button>
+                                    <button class="btn btn-primary .btn-sm" [routerLink]="['../update', categoria.id]"><i class="fa fa-pencil "></i></button>
+                                    <button  (click)="eliminar(categoria.id)" class="btn btn-danger .btn-sm" ><i class="fa fa-trash "></i></button> -->
+                </td>
+
+              </tr>
+              <!-- resultados de busqueda en data table -->
+              <!--
+                            <tr *ngIf="(mf.data | SearchPipe : searchText).length === 0">
+                                <td colspan="100">
+                                    No se encontraron datos...
+                                </td>
+                            </tr>-->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="12">
+
+                </td>
+              </tr>
+            </tfoot>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--fin tabla-->

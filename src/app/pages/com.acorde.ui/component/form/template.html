@@ -1,0 +1,47 @@
+<div class="card-block widget-body">
+
+  <form role="form" [formGroup]="_form">
+
+    <div class="form-group" *ngFor="let key of _fieldVisible">
+      <ng-template [ngIf]="_isType(key,'text')">
+        <label [attr.for]="key">{{_getRule(key).title}}</label>
+        <input type="text" formControlName="{{key}}" class="form-control" name="{{key}}" [required]="_getRule(key).required">
+        <!-- <div class="col-sm-8 text-left">
+          <span class="help-block text-danger" formControlName="nombreRazonSocial_" *ngIf="form1.get('nombre').touched && form1.get('nombre').hasError('required')">Campo Obligatorio</span>
+        </div> -->
+      </ng-template>
+      <ng-template [ngIf]="_isType(key,'number')">
+
+      </ng-template>
+      <ng-template [ngIf]="_isType(key,'boolean')">
+
+      </ng-template>
+
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="descripcion">Descripcion</label>
+      <textarea class="form-control" formControlName="descripcion" id="descripcion" name="descripcion"></textarea>
+      <div class="col-sm-8 text-left">
+        <span class="help-block text-danger" *ngIf="form1.get('descripcion').touched && form1.get('descripcion').hasError('required')">Campo Obligatorio</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="proveedor">Orden</label>
+      <input type="number" formControlName="orden" id="orden" class="form-control" name="orden" required>
+
+      <div class="col-sm-8 text-left">
+        <span class="help-block text-danger" *ngIf="form1.get('orden').touched && form1.get('orden').hasError('required')">Campo Obligatorio</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="custom-control custom-checkbox">
+                                <input type="checkbox" name="activo" checked="checked"    formControlName="activo" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Activo?</span>
+                        </label>
+    </div> -->
+
+  </form>
+
+</div>

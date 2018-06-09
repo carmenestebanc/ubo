@@ -1,0 +1,102 @@
+<div *ngIf="agency">
+  <div class="row">
+    <div class="col-xl-2 col-lg-2 col-12"></div>
+    <div class="col-xl-8 col-lg-8 col-12 bottom-30">
+      <div widget class="card">
+        <div class="card-header">
+          <span>Update Agency</span>
+          <div class="widget-controls">
+            <a data-widgster="expand" href="#" class="transition">
+              <i class="fa fa-chevron-down"></i>
+            </a>
+            <a data-widgster="collapse" href="#" class="transition">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+            <a data-widgster="fullscreen" href="#" class="transition">
+              <i class="fa fa-expand"></i>
+            </a>
+            <a data-widgster="restore" href="#" class="transition">
+              <i class="fa fa-compress"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card-block widget-body">
+
+          <form novalidate (ngSubmit)="onSubmit(form1)" [formGroup]="form1">
+              <div class="form-group">
+                  <label for="name">Name (*)</label>
+                  <input type="text" formControlName="name" id="name" class="form-control" name="name" ng-maxlength="60" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('name').touched && (form1.get('name').hasError('required') || form1.get('name').hasError('invalid'))">This field is required.</span>                            
+                      <span class="help-block text-danger" *ngIf="form1.get('name').touched && form1.get('name').hasError('maxlength')">This field requires less than 60 chars.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="name_business">Business Name (*)</label>
+                  <input type="text" formControlName="name_business" id="name_business" class="form-control" name="name_business" ng-maxlength="60" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('name_business').touched && (form1.get('name_business').hasError('required') || form1.get('name_business').hasError('invalid'))">This field is required.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('name_business').touched && form1.get('name_business').hasError('maxlength')">This field requires less than 60 chars.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="name_business">Tax Id (*)</label>
+                <input type="text" formControlName="tax_id" id="tax_id" class="form-control" name="tax_id" ng-maxlength="15" required>
+                <div class="col-sm-8 text-left">
+                    <span class="help-block text-danger" *ngIf="form1.get('tax_id').touched && (form1.get('tax_id').hasError('required') || form1.get('tax_id').hasError('invalid'))">This field is required.</span>
+                    <span class="help-block text-danger" *ngIf="form1.get('tax_id').touched && form1.get('tax_id').hasError('maxlength')">This field requires less than 16 chars.</span>
+                </div>
+            </div>
+              <div class="form-group">
+                  <label for="phone">Phone (*)</label>
+                  <input type="text" formControlName="phone" id="phone" class="form-control" name="phone" ng-maxlength="60" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('phone').touched && form1.get('phone').hasError('required')">This field is required.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('phone').touched && form1.get('phone').hasError('invalidcellphone')">Pattern invalid, must be +00 000-0000000.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('phone').touched && form1.get('phone').hasError('maxlength')">This field requires less than 20 chars.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="address">Address (*)</label>
+                  <input type="text" formControlName="address" id="address" class="form-control" name="address" ng-maxlength="50" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('address').touched && (form1.get('address').hasError('required') || form1.get('address').hasError('invalid'))">This field is required.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('address').touched && form1.get('address').hasError('maxlength')">This field requires less than 60 chars.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email">E-mail (*)</label>
+                  <input type="text" formControlName="email" id="email" class="form-control" name="email" ng-maxlength="40" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('email').touched && form1.get('email').hasError('required')">This field is required</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('email').touched && form1.get('email').hasError('invalidEmail')">Invalid email. Suggested Format.: user@domain.com</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('email').touched && form1.get('email').hasError('maxlength')">This field requires less than 40 chars.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="name_contact">Contact Person (*)</label>
+                  <input type="text" formControlName="name_contact" id="name_contact" class="form-control" name="name_contact" ng-maxlength="60" required>
+                  <div class="col-sm-8 text-left">
+                      <span class="help-block text-danger" *ngIf="form1.get('name_contact').touched && (form1.get('name_contact').hasError('required') || form1.get('name_contact').hasError('invalid'))">This field is required.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('name_contact').touched && form1.get('name_contact').hasError('maxlength')">This field requires less than 60 chars.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('name_contact').touched && form1.get('name_contact').hasError('invalidString')">This field only admits letters from a-z and A-Z.</span>
+                      <span class="help-block text-danger" *ngIf="form1.get('name_contact').touched && form1.get('name_contact').hasError('countWords')">This field requires at least one name and one lastname. No more than 6 words.</span>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="custom-control custom-checkbox"> 
+                      <input type="checkbox" name="status" formControlName="status"  class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Status?</span>
+                  </label>
+              </div> 
+              <div class="row justify-content-center">
+                  <button type="submit" class="btn btn-primary" [disabled]="!form1.valid">Submit</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

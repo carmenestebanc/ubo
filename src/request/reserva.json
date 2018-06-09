@@ -1,0 +1,58 @@
+[
+  {
+    "busquedaProducto": {
+      "proveedorId": "3a35c780-875c-11e7-b750-b7ed16848a8f",
+      "nameProveedor": "Majestic",
+      "id": "1312456",
+      "title": "Prueba",
+      "description": "desc",
+      "categoryId": 11,
+      "productId": "IDPRODUCT",
+      "origin": "",
+      "destination": "NYC",
+      "additionalInfo": {
+        "BookParam": "xa5oz4vax2esFFhLTUzErzaNaPjY0c\/+nDTBa3yVEzqf5ysPWS5Q5e2ohXIZVyEs6Z5LGG9gSVY=",
+        "fileid": 0,
+        "arrival": "2017-11-13T00:00:00",
+        "departure": "2017-11-15T00:00:00",
+        "paxlist": {
+          "Pax": [
+            {
+              "firstname": "Test-moebius4",
+              "lastname": "Test",
+              "age": "26"
+            },
+            {
+              "firstname": "TestCH",
+              "lastname": "Test-moebius-child",
+              "age": "3"
+            }
+          ]
+        },
+        "hotelid": "20192",
+        "roomid": "29",
+        "optionid": "18",
+        "accomodationid": "164",
+        "maxpax": "2",
+        "roomqty": "1",
+        "searchpax": {
+          "adults": "1",
+          "child": "1",
+          "childage": {
+            "int": "3"
+          }
+        },
+        "MealSelection": " "
+      },
+      "dateini": "2017-11-13",
+      "dateend": "2017-11-15",
+      "serviceResponse": null,
+      "nameAdaptador": "Majestic"
+    },
+    "id": 1,
+    "additionalInfo": {
+      "nombres": "Carlos"
+    },
+    "serviceResponse": null
+  }
+]

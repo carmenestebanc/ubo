@@ -1,0 +1,51 @@
+<div class="login-container-1">
+  <div class="col-xl-4 col-md-6 col-10 offset-xl-4 offset-md-3 offset-1">
+    <div class="card-login">
+      <div class="card-block text-center">
+        <h1 class="card-title">Sign up to <strong>Usblick</strong></h1>
+        <h4 *ngIf="_step != 'init'">Help for account {{_form.value.email}}</h4>
+        
+
+        <form [hidden]="_step != 'init'" [formGroup]="_form" (ngSubmit)="_onSubmitStep1($event)" class=" text-left">
+          <div class="form-group">
+            <span class="help-block text-primary">Please insert your email in order to send the recovery token</span>
+            <input formControlName="email" class="form-control checking-field" placeholder="Email" type="email">
+            <span class="help-block text-danger" *ngIf="_form.get('email').touched && _form.get('email').hasError('required')">Email is required</span>
+            <span class="help-block text-danger" *ngIf="_form.get('email').touched && _form.get('email').hasError('invalidEmail')">Invalid email address</span>
+          </div>
+          <div class="row">
+            <button class="col btn cursor-pointer btn-success" (click)="_returnLogin($event)">
+              <i class="fa fa-times"></i>&nbsp;
+              Back
+            </button>
+            <button [disabled]="!_form.valid" class="col btn cursor-pointer btn-primary" type="submit">
+              <i class="fa {{_findData?'fa-spinner fa-spin':'fa-sign-in'}}"></i>&nbsp;
+              Next
+            </button>
+          </div>
+        </form>
+
+        <form [hidden]="_step != 'token'" [formGroup]="_formToken" (ngSubmit)="_onSubmitRecover($event,_formToken.value,'admin/token')"
+          class=" text-left">
+          <div class="form-group">
+            <label for="token_recovery">Please insert the recovery token</label>
+            <input type="text" formControlName="token_recovery" id="token_recovery" class="form-control" name="token_recovery" required>
+            <div class="col-sm-8 text-left">
+              <span class="help-block text-danger" *ngIf="_formToken.get('token_recovery').touched && _formToken.get('token_recovery').hasError('required')">Campo Obligatorio</span>
+            </div>
+          </div>
+          <div class="row">
+            <button class="col btn cursor-pointer btn-success" (click)="_returnLogin($event)">
+                <i class="fa fa-times"></i>&nbsp;
+                Back
+              </button>
+            <button [disabled]="!_formToken.valid" class="col btn cursor-pointer btn-primary" type="submit">
+                <i class="fa {{_findData?'fa-spinner fa-spin':'fa-sign-in'}}"></i>&nbsp;
+                Next
+              </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

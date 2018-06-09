@@ -1,0 +1,135 @@
+<!-- <div *ngIf="usuario || true"> -->
+<div>
+  <div class="row">
+    <div class="col">
+      <div widget class="card">
+        <div class="card-header">
+          <span>Profile</span>
+          <div class="widget-controls">
+            <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+            <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+            <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+            <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+          </div>
+        </div>
+        <div class="card-block widget-body">
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>User:</b>&nbsp;<span class="pull-right">{{_data.email}}</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <div class="box ">
+                <div class="box-body box-profile">
+                  <ul class="list-group list-group-unbordered">
+                    <li class="list-group-item">
+                      <b>First Name:</b>&nbsp;<span class="pull-right">{{_data.name}}</span>
+                    </li>
+                    <li class="list-group-item">
+                      <b>Last Name:</b>&nbsp;<span class="pull-right">{{_data.lastname}}</span>
+                    </li>
+                    <!-- <li class="list-group-item">
+                      <b>Rol:</b>&nbsp;<span class="pull-right">{{_data.role}}</span>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#data" role="tab">
+                    <i class="fa fa-user"></i>&nbsp;
+                    My Info
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#password" role="tab">
+                    <i class="fa fa-key"></i>&nbsp;
+                    Password
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="data" role="tabpanel">
+                  <form (ngSubmit)="_onSubmit(_form.data,'data')" [formGroup]="_form.data">
+                    <div class="form-group">
+                      <label for="name">First Name</label>
+                      <input type="text" formControlName="name" id="name" class="form-control" name="name" required>
+                      <div class="col-sm-8 text-left">
+                        <span class="help-block text-danger" *ngIf="_form.data.get('name').touched && _form.data.get('name').hasError('required')">
+                          This field is required.
+                        </span>
+                        <span class="help-block text-danger" *ngIf="_form.data.get('name').touched && _form.data.get('name').hasError('maxlength')">
+                            This field requires less than 255 chars.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" formControlName="lastname" id="lastname" class="form-control" name="lastname" required>
+                      <div class="col-sm-8 text-left">
+                        <span class="help-block text-danger" *ngIf="_form.data.get('lastname').touched && _form.data.get('lastname').hasError('required')">
+                          This field is required.
+                        </span>
+                        <span class="help-block text-danger" *ngIf="_form.data.get('lastname').touched && _form.data.get('lastname').hasError('maxlength')">
+                          This field requires less than 255 chars.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button type="submit" class="btn btn-primary" [disabled]="!_form.data.valid">Save</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="password" role="tabpanel">
+                  <form (ngSubmit)="_onSubmit(_form.password,'password')" [formGroup]="_form.password">
+                    <div class="form-group">
+                      <label for="oldPassword">Current Password</label>
+                      <input type="password" formControlName="oldPassword" id="oldPassword" class="form-control" name="oldPassword">
+                      <div class="col-sm-8 text-left">
+                        <span class="help-block text-danger" *ngIf="_form.password.get('oldPassword').touched && _form.password.get('oldPassword').hasError('minlength')">
+                          Password must have 6 characters at least.
+                        </span>
+                        <span class="help-block text-danger" *ngIf="_form.password.get('oldPassword').touched && _form.password.get('oldPassword').hasError('maxLength')">
+                          Password must have 16 characters maximum.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">New Password</label>
+                      <input type="password" formControlName="password" id="password" class="form-control" name="password">
+                      <div class="col-sm-8 text-left">
+                        <span class="help-block text-danger" *ngIf="_form.password.get('password').touched && _form.password.get('password').hasError('minlength')">
+                            Password must have 6 characters at least.
+                        </span>
+                        <span class="help-block text-danger" *ngIf="_form.password.get('password').touched && _form.password.get('password').hasError('maxLength')">
+                            Password must have 16 characters maximum.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group" [hidden]="!_form.password.get('password').valid || !_form.password.get('oldPassword').valid">
+                      <label for="confirmed">Confirm New Password</label>
+                      <input type="password" formControlName="confirmed" id="confirmed" class="form-control" name="confirmed">
+                      <div class="col-sm-8 text-left">
+                        <span class="help-block text-danger" *ngIf="_form.password.get('confirmed').touched && _form.password.get('confirmed').hasError('confirmed')">
+                          Passwords doesn't match.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button type="submit" class="btn btn-primary" [disabled]="!_form.password.valid">Save</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

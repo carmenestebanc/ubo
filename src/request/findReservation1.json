@@ -1,0 +1,143 @@
+{
+  "proveedorId": "2ddd47f0-926a-11e7-8b5b-bbb2d815eac3",
+  "nameProveedor": "Majestic",
+  "id": "946942",
+  "title": "AC HOTEL MIAMI BEACH MARRIOTT",
+  "description": null,
+  "categoryId": 1,
+  "productId": "946942",
+  "origin": null,
+  "destination": "MIAMI",
+  "additionalInfo": {
+    "FileId": "436322",
+    "IdReservation": "946942",
+    "Estatus": "Cancelled",
+    "Arrival": "2017-10-13T00:00:00",
+    "Departure": "2017-10-15T00:00:00",
+    "Nights": "2",
+    "Price": "454.0000",
+    "MealPlan": "0.0000",
+    "ResortFee": "0.0000",
+    "Commission": "23.0000",
+    "PayBefore": "2017-09-29T00:00:00",
+    "Company": "AGENCIA PRUEBAS",
+    "Agent": "webservice,consumer",
+    "MajesticSales": "Daicich,Victor",
+    "QtyPax": {
+      "Type": "Adults",
+      "Pax": "2"
+    },
+    "PaxList": {
+      "Room": {
+        "RoomNumber": "1",
+        "Pax": [
+          {
+            "Id": "1047050",
+            "LastName": "Test",
+            "FirstName": "Test-moebius2",
+            "Qty": "1",
+            "Type": "Adults",
+            "Age": "23"
+          },
+          {
+            "Id": "1047051",
+            "LastName": "Test-moebius",
+            "FirstName": "TestU2",
+            "Qty": "1",
+            "Type": "Adults",
+            "Age": "26"
+          }
+        ]
+      }
+    },
+    "HotelDetail": {
+      "Name": "AC HOTEL MIAMI BEACH MARRIOTT",
+      "Location": {
+        "Country": "USA",
+        "State": "FLORIDA",
+        "City": "MIAMI",
+        "Zone": "BEACH"
+      },
+      "Address": {
+        "Address": "2912 Collins Ave",
+        "Zipcode": "33140"
+      },
+      "Phone": "305-671-2673",
+      "CxlPolicy": {
+        "Cxl": "5",
+        "Penalty": "1"
+      },
+      "CheckIN": "16",
+      "CheckOUT": "11",
+      "SpecialNotes": {
+        "Note": {
+          "Note": "<B>Rollaway beds:<\/b> no disponible.\n<b>Cuna:<\/b> sin cargo.",
+          "From": "2015-03-12T00:00:00",
+          "To": "2018-01-02T00:00:00"
+        }
+      }
+    },
+    "CancelationReasons": "pax cancelled",
+    "ReservationDetail": {
+      "Item": {
+        "Qty": "1",
+        "RoomType": "GUEST ROOM 1 KING",
+        "Arrival": "2017-10-13T00:00:00",
+        "Departure": "2017-10-15T00:00:00",
+        "Nights": "2",
+        "Accomodation": "DBL",
+        "RefPrice": "454.0000",
+        "Resortfee": {
+          "Total": "0.0000",
+          "Note": []
+        }
+      },
+      "CxlPolicy": {
+        "CxlDays": "5",
+        "NtsPenalty": "1",
+        "PercentPenalty": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "Term1": {
+          "From": "2017-10-08T00:00:00",
+          "To": "2017-10-12T00:00:00",
+          "CxlCharge": "139.3700"
+        },
+        "Term2": {
+          "From": {
+            "@attributes": {
+              "nil": "true"
+            }
+          },
+          "To": {
+            "@attributes": {
+              "nil": "true"
+            }
+          },
+          "CxlCharge": {
+            "@attributes": {
+              "nil": "true"
+            }
+          }
+        }
+      }
+    },
+    "Comment": {
+      "@attributes": {
+        "nil": "true"
+      }
+    },
+    "RequestedServices": {
+      "@attributes": {
+        "nil": "true"
+      }
+    }
+  },
+  "dateini": null,
+  "dateend": null,
+  "serviceResponse": null,
+  "nameAdaptador": "majestic",
+  "idBusqueda": null
+}

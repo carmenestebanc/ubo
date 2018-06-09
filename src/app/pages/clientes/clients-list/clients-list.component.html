@@ -1,0 +1,78 @@
+<div class="row" *ngIf="clients">
+    <div class="col">
+        <div widget class="card">
+            <div class="card-header">
+                <span class="text-uppercase">Clients List</span>
+                <div class="widget-controls">
+                    <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                    <button type="submit" class="btn btn-primary pull-right" [routerLink]="['../add']">New</button>
+                </div><!--End widget controls -->
+            </div><!--End card header -->
+            <div class="card-block widget-body">
+                <!-- tabla con los datos de los clients -->
+                <div class="table-responsive datatable">
+                    <table class="table table-striped table-hover table-sm" [mfData]="clients" #mf="mfDataTable" [mfRowsOnPage]="10">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Birth Date</th>  
+                                <th>E-mail</th>                              
+                                <th>Phone</th>                                                        
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let client of mf.data">
+                                <td>{{client.id}}</td>
+                                <td>{{client.first_name}}</td>                                                               
+                                <td>{{client.last_name}}</td>
+                                <td>{{client.birth_date}}</td>
+                                <td>{{client.email}}</td>
+                                <td>{{client.phone}}</td>                                
+                                <td>
+                                    <!--<button class="btn btn-info .btn-sm" [routerLink]="['../detail', client.id]"><i class="fa fa-search-plus "></i></button>-->
+                                    <button class="btn btn-info .btn-sm" [routerLink]="['../detail', client.id]"><i class="fa fa-search-plus "></i></button>
+                                    <button class="btn btn-primary .btn-sm" [routerLink]="['../update', client.id]"><i class="fa fa-pencil "></i></button>
+                                    <button data-toggle='modal' data-target="#confirm" (click)="setClient(client.id)" class="btn btn-danger .btn-sm"><i class="fa fa-trash "></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="12">
+                                    <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"><strong>Rows</strong></mfBootstrapPaginator>
+                                </td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                    <div id="confirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6>Delete Client</h6>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really wish to delete client?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn">NO</button>
+                                    <button (click)="delete(clientid)" type="button" data-dismiss="modal" class="btn btn-primary">
+                                        <i class="fa fa-trash"></i>&nbsp;
+                                        YES
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end modal dialog -->
+                    </div><!-- end modal -->
+                </div><!-- end data-table-->
+            </div><!-- end card-body-->
+        </div><!-- end widget card-->
+    </div><!-- end col 12-->
+</div><!-- end row clients-->
+

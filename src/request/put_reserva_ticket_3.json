@@ -1,0 +1,402 @@
+[
+  {
+    "status": true,
+    "message": "la actualizacion de reserva ha sido procesada.",
+    "result": {
+      "actualizacion": {
+        "status": true,
+        "message": "Majestic: Reserva exitosa",
+        "result": {
+          "proveedorId": "1f121080-997e-11e7-b128-cdcdd96834e5",
+          "nameProveedor": "Majestic",
+          "id": "947267",
+          "title": "SERVICIO REGULAR MINIBUS (ORLANDO - MIAMI) TRIP: 100 (ST)",
+          "description": "HTL ORLANDO - HTL MIAMI\nRecogemos a los pasajeros en sus hoteles para llevarlos al terminal de Super Tours y de ahi cambiar al Minibus para el traslado a Miami.\n5:30am Pick up hoteles Orlando. Por favor comuniquese con Majestic International Group para los horarios exactos.\nSalidas diarias Trip: 100\n7:00am Salida desde Orlando - Orlando Super Terminal (5419 International Drive, Orlando FL) \n7:15am Kissimmee - Walmart Osceola\n9:00am Fort Pierce Plaza de servicio - Florida Turnpike dirección sur\n9:40am West Palm Beach Plaza de servicio - Florida Turnpike Milla 94.\n10:20am Boca Raton - Pompano Plaza de servicio - Florida Turnpike Milla 65 dirección sur.\n10:45am Hollywood - Mc Donald’s – 2851 Sheridan Street.\n11:15am Aeropuerto MIA Bloque E, Puerta 19, 2nd piso – Afueras MIA Airport Regency Hotel.\n11:30am Miami Downtown Area - Holiday Inn Marina Park Hotel 340 Biscayne Blvd.\n11:45am South Miami Beach Area Todos los hoteles en Collins Ave. desde 3 St hasta 27 St. \n12:00pm Miami Beach - Todos los hoteles desde 65 St hasta 28 St\n*El equipaje se limita a dos maletas de 45 libras c/u y un bolso de mano por persona*",
+          "categoryId": null,
+          "productId": 288,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436743",
+            "IdReservation": "947267",
+            "Location": "ORLANDO",
+            "Estatus": "Confirmed",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "116.0000",
+            "PaxList": {
+              "Type": {
+                "LastName": "rodriguez",
+                "FirstName": "yoel",
+                "Qty": "1",
+                "Type": "Adults",
+                "Age": "26"
+              }
+            },
+            "Comment": null,
+            "CancelationReasons": null,
+            "ReservationDetail": {
+              "PaxQTY": "1",
+              "Price": "116.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "3",
+                "Penalty": "10000",
+                "Term": {
+                  "From": "2017-10-08T00:00:00",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "11600.0000"
+                }
+              }
+            },
+            "CxlDays": "3",
+            "Penalty": "10000",
+            "CxlCharge": {
+              "@attributes": {
+                "nil": "true"
+              }
+            },
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-10-08T00:00:00",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "11600.0000",
+            "Notes": {
+              "@attributes": {
+                "nil": "true"
+              }
+            }
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "dateend": "2017-10-15T00:00:00",
+          "serviceResponse": null,
+          "nameAdaptador": "Majestic_Others",
+          "idBusqueda": null
+        },
+        "serviceResponse": null
+      },
+      "cancelacion": {
+        "status": true,
+        "message": "Majestic: Cancelar de Reserva exitosa",
+        "result": {
+          "proveedorId": "1f121080-997e-11e7-b128-cdcdd96834e5",
+          "nameProveedor": "Majestic",
+          "id": "947252",
+          "title": "KENNEDY SPACE CENTER 2016/17 (FD)",
+          "description": "A menos de una hora de Orlando se encuentra Kennedy Space Center. Kennedy Space Center ofrece una mirada fascinante detrás de las cámaras en el programa del espacio. Tours en la sede de la NASA y ver lanzamiento del transbordador espacial desde un pórtico de observación de cuatro pisos. Caminar debajo de un enorme cohete de luna y revivir los primeros pasos de Neil Armstrong en la luna. Conocer a un astronauta real, pasear por el jardín de cohetes y disfrutar películas del espacio de IMAX®.\n<b>Incluye:</b> La admisión al Centro Espacial Kennedy, traslados al center, el transbordador espacial Atlantis, Apolo / Saturno V Center, bus para un tour de recorrido general del complejo y peliculas I-Max 3D.",
+          "categoryId": 6,
+          "productId": null,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436728",
+            "IdReservation": "947252",
+            "Location": "ORLANDO",
+            "Estatus": "Cancelled",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "392.0000",
+            "PaxList": {
+              "Type": [
+                {
+                  "LastName": "perez",
+                  "FirstName": "pedro",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "perez",
+                  "FirstName": "pedro",
+                  "Qty": "1",
+                  "Type": "Junior",
+                  "Age": "10"
+                }
+              ]
+            },
+            "Comment": null,
+            "CancelationReasons": "pax cancelled",
+            "ReservationDetail": {
+              "PaxQTY": "4",
+              "Price": "98.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "3",
+                "Penalty": "100",
+                "Term": {
+                  "From": "2017-10-08T00:00:00",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "392.0000"
+                }
+              }
+            },
+            "CxlDays": "3",
+            "Penalty": "100",
+            "CxlCharge": {
+              "@attributes": {
+                "nil": "true"
+              }
+            },
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-10-08T00:00:00",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "392.0000",
+            "Notes": {
+              "@attributes": {
+                "nil": "true"
+              }
+            }
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "….\n10:20am Boca Raton - Pompano Plaza de servicio - Florida Turnpike Milla 65 dirección sur.\n11:15am Aeropuerto MIA Bloque E, Puerta 19, 2nd piso – Afueras MIA Airport Regency Hotel.\n10:45am Hollywood - Mc Donald’s – 2851 Sheridan Street.\n11:30am Miami Downtown Area - Holiday Inn Marina Park Hotel 340 Biscayne Blvd.\n11:45am South Miami Beach Area Todos los hoteles en Collins Ave. desde 3 St hasta 27 St. \n12:00pm Miami Beach - Todos los hoteles desde 65 St hasta 28 St\n*El equipaje se limita a dos maletas de 45 libras c/u y un bolso de mano por persona*",
+          "categoryId": null,
+          "productId": 288,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436744",
+            "IdReservation": "947268",
+            "Location": "ORLANDO",
+            "Estatus": "Confirmed",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "137.0000",
+            "PaxList": {
+              "Type": {
+                "LastName": "rodriguez",
+                "FirstName": "yoel",
+                "Qty": "1",
+                "Type": "Adults",
+                "Age": "26"
+              }
+            },
+            "Comment": null,
+            "CancelationReasons": null,
+            "ReservationDetail": {
+              "PaxQTY": "1",
+              "Price": "137.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "3",
+                "Penalty": "10000",
+                "Term": {
+                  "From": "2017-10-08T00:00:00",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "13700.0000"
+                }
+              }
+            },
+            "CxlDays": "3",
+            "Penalty": "10000",
+            "CxlCharge": {
+              "@attributes": {
+                "nil": "true"
+              }
+            },
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-10-08T00:00:00",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "13700.0000",
+            "Notes": {
+              "@attributes": {
+                "nil": "true"
+              }
+            }
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "dateend": "2017-10-15T00:00:00",
+          "serviceResponse": null,
+          "nameAdaptador": "Majestic_Others",
+          "idBusqueda": null
+        },
+        "serviceResponse": null
+      },
+      "cancelacion": {
+        "status": false,
+        "message": "Error en Cancelar de Reserva",
+        "result": null,
+        "serviceResponse": null
+      }
+    },
+    "serviceResponse": null
+  },
+  {
+    "status": true,
+    "message": "la actualizacion de reserva ha sido procesada.",
+    "result": {
+      "actualizacion": {
+        "status": true,
+        "message": "Majestic: Reserva exitosa",
+        "result": {
+          "proveedorId": "1f121080-997e-11e7-b128-cdcdd96834e5",
+          "nameProveedor": "Majestic",
+          "id": "947269",
+          "title": "SERVICIO REGULAR MINIBUS (ORLANDO - MIAMI) TRIP: 200 (ST)",
+          "description": "HTL ORLANDO - HTL MIAMI\nRecogemos a los pasajeros en sus hoteles para llevarlos al terminal de Super Tours y de ahi cambiar al Minibus para el traslado a Miami.\n10:15am Pick up hoteles Orlando. Por favor comuniquese con Majestic International Group para los horarios exactos.\nSalidas diarias Trip: 200\n11:45am Salida desde Orlando - Orlando Super Terminal (5419 International Drive, Orlando FL)\n12:00pm Kissimmee - Walmart Osceola\n1:45pm Fort Pierce Plaza de servicio - Florida Turnpike dirección sur Fort Pierce Area\n2:30pm West Palm Beach Plaza de servicio - Florida Turnpike Milla 94.\n3:00pm Fort Lauderdale - Boca Raton Area - Pompano Plaza de servicio - Florida Turnpike Milla 65 dirección sur.\n3:20pm Aeropuerto Ft. Lauderdale Hollywood - Mc Donald’s – 2851 Sheridan Street. \n4:00pm Aeropuerto MIA Bloque E, Puerta 19, 2nd piso – Afueras MIA Airport Regency Hotel.\n4:15pm Miami Downtown Area - Holiday Inn Marina Park Hotel 340 Biscayne Blvd.\n4:30pm South Miami Beach Area Todos los hoteles en Collins Ave. desde 3 St hasta 27 St. \n4:45pm Miami Beach - Todos los hoteles desde 65 St hasta 28 St.\n*El equipaje se limita a dos maletas de 45 libras c/u y un bolso de mano por persona*",
+          "categoryId": null,
+          "productId": 1033,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436745",
+            "IdReservation": "947269",
+            "Location": "ORLANDO",
+            "Estatus": "Confirmed",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "109.0000",
+            "PaxList": {
+              "Type": {
+                "LastName": "rodriguez",
+                "FirstName": "yoel",
+                "Qty": "1",
+                "Type": "Adults",
+                "Age": "26"
+              }
+            },
+            "Comment": null,
+            "CancelationReasons": null,
+            "ReservationDetail": {
+              "PaxQTY": "1",
+              "Price": "109.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "3",
+                "Penalty": "10000",
+                "Term": {
+                  "From": "2017-10-08T00:00:00",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "10900.0000"
+                }
+              }
+            },
+            "CxlDays": "3",
+            "Penalty": "10000",
+            "CxlCharge": {
+              "@attributes": {
+                "nil": "true"
+              }
+            },
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-10-08T00:00:00",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "10900.0000",
+            "Notes": {
+              "@attributes": {
+                "nil": "true"
+              }
+            }
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "dateend": "2017-10-15T00:00:00",
+          "serviceResponse": null,
+          "nameAdaptador": "Majestic_Others",
+          "idBusqueda": null
+        },
+        "serviceResponse": null
+      },
+      "cancelacion": {
+        "status": false,
+        "message": "Error en Cancelar de Reserva",
+        "result": null,
+        "serviceResponse": null
+      }
+    },
+    "serviceResponse": null
+  }
+]

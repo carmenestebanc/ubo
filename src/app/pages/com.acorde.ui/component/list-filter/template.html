@@ -1,0 +1,19 @@
+
+<div class="row">
+  <div class="col-lg-6">
+    <input type="text" #filterSelect (keyup)="_getData(true,filterSelect)" placeholder="Search">
+    <ul>
+      <li *ngFor="let item of _getData(true,filterSelect)" (click)='_select(item)' title="Remover" class="cursor-pointer">
+        <a>{{item.text}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-6">
+    <input type="text" #filterList (keyup)="_getData(true,filterSelect)" placeholder="Search">
+    <ul>
+      <li *ngFor="let item of _getData(false,filterList)" (click)='_select(item)' title="Agregar" class="cursor-pointer">
+        <a >{{item.text}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

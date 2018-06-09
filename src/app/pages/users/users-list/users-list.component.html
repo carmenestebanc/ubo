@@ -1,0 +1,89 @@
+<div class="row" *ngIf="data">
+    <div class="col">
+        <div widget class="card">
+            <div class="card-header">
+                <span class="text-uppercase">Users List</span>
+                <span class="text-uppercase" *ngIf="showingAgents===true">/ Agents</span>
+                <div class="widget-controls">
+                    <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
+                    <button type="submit" class="btn btn-primary pull-right" [routerLink]="['../add']">New</button>
+                </div>
+            </div>
+            <div class="card-block widget-body">
+                <!-- tabla con los datos de los users -->
+                <div class="table-responsive datatable">
+                        <button (click)="showOnlyAgents()" class="pestanya">Only Agents</button>
+                        <button (click)="showAllUsers()" class="pestanya">All Users</button>
+                    <table class="table table-striped table-hover table-sm" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="10">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>E-mail</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Phone</th>
+                                <th>Enabled</th>
+                                <th>Role</th>
+                                <th>Is Agent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let user of mf.data">
+                            <td>{{user.id}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.first_name}}</td>
+                            <td>{{user.last_name}}</td>
+                            <td>{{user.phone}}</td>
+                            <td>
+                                <h6 *ngIf="user.enabled==1">Yes</h6>
+                                <h6 *ngIf="user.enabled==0">No</h6>
+                            </td>
+                            <td>{{user.roles}}</td>
+                            <td>
+                                <h6 *ngIf="user.is_agent==true">Yes</h6>
+                                <h6 *ngIf="user.is_agent==false">No</h6>
+                            </td>
+                            <td>                               
+                                <button class="btn btn-info .btn-sm" [routerLink]="['../detail', user.id]"><i class="fa fa-search-plus "></i></button>
+                                <button class="btn btn-primary .btn-sm" [routerLink]="['../update', user.id]"><i class="fa fa-pencil "></i></button>
+                                <button data-toggle='modal' data-target="#confirm" (click)="setUser(user.id, user.email)" class="btn btn-danger .btn-sm"><i class="fa fa-trash "></i></button>
+                            </td>
+
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="12">                                    
+                                    <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"><strong>Rows</strong></mfBootstrapPaginator>
+                                </td>                       
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                    <div id="confirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6>Delete User</h6>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really wish to delete user {{userName}}?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn">NO</button>
+                                    <button (click)="delete(userId)" type="button" data-dismiss="modal" class="btn btn-primary">
+                                        <i class="fa fa-trash"></i>&nbsp;
+                                        YES
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

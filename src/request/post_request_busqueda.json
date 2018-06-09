@@ -1,0 +1,20 @@
+{
+  "idProviders": [],
+  "idCategorys": [
+    1
+  ],
+  "origin": "",
+  "destination": "NYC",
+  "pricefrom": 10,
+  "priceto": 200000,
+  "arrivalDate": "2017-09-14",
+  "departureDate": "2017-09-20",
+  "QtyProduct": 1,
+  "QtyPax": 1,
+  "others": {
+      "serializado": false,
+      "maxRequestTimeOnSeconds": 10,
+      "minNumResults": 3,
+      "child": 0
+  }
+}

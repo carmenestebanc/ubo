@@ -1,0 +1,64 @@
+[
+  {
+    "proveedorId": "aeae34a0-93ed-11e7-a464-35b63289367d",
+    "nameProveedor": "Majestic",
+    "id": "947068",
+    "title": "CIRQUE DU SOLEIL \"E-TICKET\"",
+    "description": "Un (1) Ticket para Cirque du Soleil asiento categor\u00eda C\u00edrculo de Oro. El ticket especifica el asiento, el show, la fecha y la hora. Los tickets NO son reembolsables. Todos los horarios y fechas de los espect\u00e1culos est\u00e1n sujetos a cambios sin previo aviso.",
+    "categoryId": 9,
+    "productId": "947068",
+    "origin": null,
+    "destination": "ORLANDO,LAKE BUENA VISTA",
+    "additionalInfo": {
+      "FileId": "436466",
+      "IdReservation": "947068",
+      "Estatus": "On Request",
+      "Arrival": "2017-09-14T00:00:00",
+      "Departure": "2017-09-20T00:00:00",
+      "CancelationReasons": null,
+      "ReservationDetail": {
+        "PaxQTY": "2",
+        "Price": "197.0000",
+        "RatePaxType": "RATES PER PAX",
+        "RateChargeType": "WHOLE PERIOD RATE",
+        "Arrival": "2017-09-14T00:00:00",
+        "Departure": "2017-09-20T00:00:00",
+        "Comments": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "Notes": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "Airline": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "FlightTime": [],
+        "HotelBooking": {
+          "@attributes": {
+            "nil": "true"
+          }
+        },
+        "CxlPolicy": {
+          "CxlDays": "30",
+          "Penalty": "100",
+          "Term": {
+            "From": "2017-09-07T15:12:49.807",
+            "To": "2017-09-13T00:00:00",
+            "CxlCharge": "394.0000"
+          }
+        }
+      }
+    },
+    "dateini": null,
+    "dateend": null,
+    "serviceResponse": null,
+    "nameAdaptador": "Majestic_Others",
+    "idBusqueda": null
+  }
+]

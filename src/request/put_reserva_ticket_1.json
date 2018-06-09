@@ -1,0 +1,247 @@
+[
+  {
+    "status": true,
+    "message": "la actualizacion de reserva ha sido procesada.",
+    "result": {
+      "actualizacion": {
+        "status": true,
+        "message": "Majestic: Reserva exitosa",
+        "result": {
+          "proveedorId": "1f121080-997e-11e7-b128-cdcdd96834e5",
+          "nameProveedor": "Majestic",
+          "id": "947266",
+          "title": "CIRQUE DU SOLEIL \"E-TICKET\"",
+          "description": "Un (1) Ticket para Cirque du Soleil asiento categoría 2. El ticket especifica el asiento, el show, la fecha y la hora. Los tickets NO son reembolsables. Todos los horarios y fechas de los espectáculos están sujetos a cambios sin previo aviso.",
+          "categoryId": null,
+          "productId": 1136,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436742",
+            "IdReservation": "947266",
+            "Location": "ORLANDO,LAKE BUENA VISTA",
+            "Estatus": "On Request",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "273.0000",
+            "PaxList": {
+              "Type": [
+                {
+                  "LastName": "h",
+                  "FirstName": "h",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "h",
+                  "FirstName": "h",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "h",
+                  "FirstName": "h",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "hh",
+                  "FirstName": "hh",
+                  "Qty": "1",
+                  "Type": "Child",
+                  "Age": "7"
+                },
+                {
+                  "LastName": "h",
+                  "FirstName": "hhh",
+                  "Qty": "1",
+                  "Type": "Child",
+                  "Age": "6"
+                }
+              ]
+            },
+            "Comment": null,
+            "CancelationReasons": null,
+            "ReservationDetail": {
+              "PaxQTY": "3",
+              "Price": "91.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "30",
+                "Penalty": "100",
+                "Term": {
+                  "From": "2017-09-14T15:02:34.863",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "273.0000"
+                }
+              }
+            },
+            "CxlDays": "30",
+            "Penalty": "100",
+            "CxlCharge": {
+              "@attributes": {
+                "nil": "true"
+              }
+            },
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-09-14T15:02:34.863",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "273.0000",
+            "Notes": {
+              "@attributes": {
+                "nil": "true"
+              }
+            }
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "dateend": "2017-10-15T00:00:00",
+          "serviceResponse": null,
+          "nameAdaptador": "Majestic_Others",
+          "idBusqueda": null
+        },
+        "serviceResponse": null
+      },
+      "cancelacion": {
+        "status": true,
+        "message": "Majestic: Cancelar de Reserva exitosa",
+        "result": {
+          "proveedorId": "1f121080-997e-11e7-b128-cdcdd96834e5",
+          "nameProveedor": "Majestic",
+          "id": "947253",
+          "title": "<Font color=gray>TICKETS DISNEY MAGIA A TU MANERA </font>",
+          "description": "2 DIAS PARA 1 PARQUE TEMATICO POR DIA\nSi este ticket es will call NO es reembolsable. Los parques estan sujetos a ser cerrados sin previo aviso por clima o reformas. Los tickets son validos por un año a partir del momento que son emitidos.",
+          "categoryId": 9,
+          "productId": null,
+          "origin": null,
+          "destination": "ORL",
+          "additionalInfo": {
+            "FileId": "436729",
+            "IdReservation": "947253",
+            "Location": "ORLANDO,LAKE BUENA VISTA",
+            "Estatus": "Cancelled",
+            "Arrival": "2017-10-11T00:00:00",
+            "Departure": "2017-10-15T00:00:00",
+            "Price": "861.0000",
+            "PaxList": {
+              "Type": [
+                {
+                  "LastName": "fdfdf",
+                  "FirstName": "dfdf",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "dfdf",
+                  "FirstName": "dfd",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "perez",
+                  "FirstName": "pedro",
+                  "Qty": "1",
+                  "Type": "Adults",
+                  "Age": "22"
+                },
+                {
+                  "LastName": "peggfrez",
+                  "FirstName": "pefdfdro",
+                  "Qty": "1",
+                  "Type": "Child",
+                  "Age": "7"
+                },
+                {
+                  "LastName": "dssssss",
+                  "FirstName": "sesese",
+                  "Qty": "1",
+                  "Type": "Child",
+                  "Age": "6"
+                }
+              ]
+            },
+            "Comment": null,
+            "CancelationReasons": "pax cancelled",
+            "ReservationDetail": {
+              "PaxQTY": "3",
+              "Price": "287.0000",
+              "RatePaxType": "RATES PER PAX",
+              "RateChargeType": "WHOLE PERIOD RATE",
+              "Arrival": "2017-10-11T00:00:00",
+              "Departure": "2017-10-15T00:00:00",
+              "Comments": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "Notes": "THIS VOUCHER REPRESENT WILL CALL TICKETS ONLY",
+              "Airline": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "FlightTime": [],
+              "HotelBooking": {
+                "@attributes": {
+                  "nil": "true"
+                }
+              },
+              "CxlPolicy": {
+                "CxlDays": "99",
+                "Penalty": "100",
+                "Term": {
+                  "From": "2017-09-14T15:02:36.303",
+                  "To": "2017-10-10T00:00:00",
+                  "CxlCharge": "861.0000"
+                }
+              }
+            },
+            "CxlDays": "99",
+            "Penalty": "100",
+            "CxlCharge": "662.9700",
+            "PayBefore": "2017-10-04T00:00:00",
+            "TermFrom": "2017-09-14T15:02:36.303",
+            "TermTo": "2017-10-10T00:00:00",
+            "TermCxlCharge": "861.0000",
+            "Notes": "THIS VOUCHER REPRESENT WILL CALL TICKETS ONLY"
+          },
+          "dateini": "2017-10-11T00:00:00",
+          "dateend": "2017-10-15T00:00:00",
+          "serviceResponse": null,
+          "nameAdaptador": "Majestic_Others",
+          "idBusqueda": null
+        },
+        "serviceResponse": null
+      }
+    },
+    "serviceResponse": null
+  }
+]
