@@ -16,7 +16,8 @@ import {BreadcrumbComponent} from '../theme/components/breadcrumb/breadcrumb.com
 import {BackTopComponent} from '../theme/components/back-top/back-top.component';
 import {SearchComponent} from './shared-components/search/search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HeaderComponent } from '../theme/components/header/header.component';
+import { FooterComponent } from '../theme/components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -37,6 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BlankComponent,
     MenuComponent,
     NavbarComponent,
+    HeaderComponent,
+    FooterComponent,
     BreadcrumbComponent,
     BackTopComponent,
     SearchComponent

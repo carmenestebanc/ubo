@@ -1,5 +1,7 @@
-<ubl-navbar></ubl-navbar>
+<!-- <ubl-navbar></ubl-navbar> -->
+
 <div class="container-fluid">
+    <ubl-header></ubl-header>
     <div class="row">
         <ubl-menu></ubl-menu>
         <div class="main-wrapper" [ngClass]="{'menu-collapsed': isMenuCollapsed}">
@@ -9,12 +11,15 @@
                 <ubl-breadcrumb></ubl-breadcrumb>
                 <router-outlet></router-outlet>
             </div>
-
+<!-- 
             <footer class="footer text-center clearfix">
                 <div class="footer-main pull-left  clearfix">
                     <div class="copyright pull-left"><strong >&copy; USBlick - 2017</strong></div>
                 </div>
-            </footer>
+            
+            </footer> -->
+            <ubl-footer></ubl-footer>
+
             <ubl-back-top position="200"></ubl-back-top>
         </div>
     </div>
