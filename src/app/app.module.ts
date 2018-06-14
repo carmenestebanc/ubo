@@ -16,17 +16,13 @@ import { environment } from '../environments/environment';
 import { Logger, Options } from "angular2-logger/core";
 import { NguiDatetimePickerModule, NguiDatetime } from '@ngui/datetime-picker';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ReservationsComponent } from './reservations/reservations.component';
-import { PaymentsComponent } from './payments/payments.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorComponent,
-    ReservationsComponent,
-    PaymentsComponent
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
