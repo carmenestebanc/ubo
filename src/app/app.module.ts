@@ -15,16 +15,22 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { environment } from '../environments/environment';
 import { Logger, Options } from "angular2-logger/core";
 import { NguiDatetimePickerModule, NguiDatetime } from '@ngui/datetime-picker';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReservationsComponent } from './reservations/reservations.component';
+import { PaymentsComponent } from './payments/payments.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorComponent
+    ErrorComponent,
+    ReservationsComponent,
+    PaymentsComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     HttpModule,
     NguiDatetimePickerModule,
     AgmCoreModule.forRoot({

@@ -11,7 +11,7 @@
                     <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>
                 </div>
             </div>
-            <div class="card-block widget-body">
+            <div class="card-block widget-body espacio">
 
                 <form novalidate (ngSubmit)="onSubmit(form1)" [formGroup]="form1">
                     <div class="form-group">
@@ -74,9 +74,16 @@
                             <span class="help-block text-danger" *ngIf="form1.get('name_contact').touched && form1.get('name_contact').hasError('countWords')">This field requires at least one name and one lastname. No more than 6 words.</span>
                         </div>
                     </div>
+                    <br />
                     <div class="form-group">
                         <label class="custom-control custom-checkbox"> 
-                            <input type="checkbox" name="status" formControlName="status"  class="custom-control-input">
+
+                            <input type="checkbox" name="status"  formControlName="status">
+
+                            <!-- <input type="checkbox" name="status"  formControlName="status"  class="
+                            custom-control-input" > -->
+
+                            <br />
                             <span class="custom-control-indicator"></span>
                             <span class="custom-control-description">Status?</span>
                         </label>

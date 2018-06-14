@@ -13,6 +13,7 @@ exports.routes = [
             { path: 'agents', loadChildren: 'app/pages/agents/agents.module#AgentsModule', data: { breadcrumb: 'Agents' } },
             { path: 'agencies', loadChildren: 'app/pages/agencias/agency.module#AgencyModule', data: { breadcrumb: 'Agencies' } },
             { path: 'clients', loadChildren: 'app/pages/clientes/client.module#ClientModule', data: { breadcrumb: 'Clients' } },
+            { path: 'reservations', loadChildren: 'app/pages/clientes/reservations.module#ReservationsModule', data: { breadcrumb: 'Clients' } },
             { path: 'users', loadChildren: 'app/pages/users/users.module#UsersModule', data: { breadcrumb: 'Users' } },
             { path: 'search', component: search_component_1.SearchComponent, data: { breadcrumb: 'Search' } },
             { path: 'blank', component: blank_component_1.BlankComponent, data: { breadcrumb: 'Blank page' } },

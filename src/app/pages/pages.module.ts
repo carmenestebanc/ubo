@@ -43,6 +43,8 @@ import { FooterComponent } from '../theme/components/footer/footer.component';
     BreadcrumbComponent,
     BackTopComponent,
     SearchComponent
+
+    
   ],
 })
 export class PagesModule { }
